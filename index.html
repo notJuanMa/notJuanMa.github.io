@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello !</title>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap.hero.min.css" rel="stylesheet">
+	<link href="css/w3.css" rel="stylesheet">
+	<script src="js/jquery-2.1.4.js"></script>
+	<style>
+		* {
+			font-family: "Ubuntu", Sans-Serif;
+			transition: all 0.2s !important;
+		}
+		body {
+			padding-top: 40px;
+		}
+		#w1 {
+			transform: rotate(5deg);
+		}
+		#w2 {
+			transform: rotate(-5deg);
+		}
+		#w3 {
+			transform: rotate(5deg);
+		}
+		footer span {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		footer span:hover {
+			color: #d11aff !important;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="container-fluid" id="main" style="display: none">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="well w3-teal" id="w1">
+				<h1 class="text-center" id="njm">notJuanMa</h1>
+			</div>
+			<div class="well w3-teal" id="w2">
+				<h1 class="text-center">Welcome to my web page!</h1>
+			</div>
+			<div class="well w3-teal" id="w3">
+				<p class="text-center" style="margin: 0px auto !important;">even a simple web page can be beautiful..</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+
+<footer class="container-fluid text-center" style="font-size: 35px">
+	<a href="//twitter.com/notJuanMa" target="_blank"><span class="fa fa-lg fa-twitter w3-text-teal"></span></a>
+	<a href="//github.com/notJuanMa" target="_blank"><span class="fa fa-lg fa-github w3-text-teal"></span></a>
+	<a href="skype:notJuanMa?chat" target="_blank"><span class="fa fa-lg fa-skype w3-text-teal"></span></a>
+</footer>
+
+<script>
+$(document).ready(function() {
+	$("#main").show().fadeIn(1000);
+});
+
+$(window).focus(function() {
+	$("title").text("Hi again...");
+});
+
+$(window).blur(function() {
+	$("title").text("._.");
+});
+</script>
+
+</body>
+</html>
